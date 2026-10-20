@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PuertoAbierto - diario de actividades</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!--Todo lo que tiene que ver con flex permite que la distribución de las cosas en la página sea más fácil de manejar-->
+    <div id="container" class="foco d-flex flex-column min-vh-100">
+        <nav class="navbar navbar-expand-lg rounded-5">
+            <div class="container-fluid">
+                <!--Nombre de la página junto a imagen-->
+                <img class="pequeno-espacio-izq pequeno-espacio-der" src="images/LOGO en negro.png" alt="Logo" width="80" height="80" class="d-inline-block align-text-top">
+                <a class="navbar-brand" href="inicio.html">Puerto Abierto</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--Hamburg-->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!--"ms-auto" es para tirarlo a la derecha-->
+                    <!--"ul" es la barra del nav con los botones que llevan a otras direcciones-->
+                    <ul class="navbar-nav ms-auto pequeno-espacio-der">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="inicio.html">Principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="actividades.html">Actividades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="inscripcion.html">Inscripción</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <form class="mt-auto mb-auto">
+            <h3 class="centrar-texto color-aliceblue">Inscripción</h3>
+            <div id="contenedor-form" class="col-md-6 col-10 d-flex flex-column ms-auto me-auto">
+                <div i="ffila1" class="row">
+                    <div class="col-lg-6 col-sm-12">
+                        <!--"label" es el letrero para mostrar texto-->
+                        <label for="exampleInputEmail1" class="form-label">Nombre completo</label>
+                        <input type="text" class="form-control" id="inputNombre" placeholder="Jhon Ejemplo">
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <label for="exampleInputPassword1" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com">
+                    </div>
+                </div>
+                <div id="ffila2" class="row margen-superior">
+                    <div class="col-lg-6 col-8 me-auto">
+                        <label for="exampleInputPassword1" class="form-label">Teléfono</label>
+                        <input type="text" class="form-control" id="inputTelefono" placeholder="56912345678">
+                    </div>
+                    <div class="col-lg-2 col-4 ms-auto me-auto">
+                        <label for="exampleInputPassword1" class="form-label">Edad</label>
+                        <input type="number" class="form-control" id="inputTelefono" placeholder="0">
+                    </div>
+                </div>
+                <select class="form-select form-select-md margen-superior">
+                    <option selected>Seleccionar actividad</option>
+                    <option value="1">Feria de gatos</option>
+                    <option value="2">Fonda en el muelle Viña del Mar</option>
+                    <option value="3">Feria de perros</option>
+                    <option value="4">Stand Up comedy: Luis Sliming</option>
+                    <option value="3">Obra de teatro USM</option>
+                    <option value="3">Semana del poeta</option>
+                </select>
+                <div class="mb-3 form-check margen-superior">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Acepto todos los Terminos y Condiciones de la inscripción</label>
+                </div>
+                <button type="submit" class="btn btn-primary margen-superior ms-auto">inscribirse</button>
+            </div>
+        </form>
+        <footer class="mt-auto rounded-5">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 centrar-redes">
+                            <a href="https://www.instagram.com/?hl=es-la">@instagram</a>
+                </div>
+                <div class="col-md-3 col-sm-6 centrar-redes">
+                            <a href="https://x.com/?lang=es">www.twitter.com</a>
+                </div>
+                <div class="col-md-3 col-sm-6 centrar-redes">
+                            <a href="https://aula.usm.cl/">puerto.abierto@gmail.com</a>
+                </div>
+                <div class="col-md-3 col-sm-6 centrar-redes">
+                            <a href="https://i.pinimg.com/736x/ef/aa/85/efaa85262c2979c0bce49d0dc643d49e.jpg">wsp 999999999</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

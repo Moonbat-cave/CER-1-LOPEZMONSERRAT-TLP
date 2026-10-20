@@ -1,0 +1,102 @@
+nav {
+    background-color: rgb(0, 240, 240);
+    min-height: 100px;
+    font-size: 30;
+    font-weight: bold;
+    margin-top: 20px;
+    margin: 10px;
+}
+
+footer{
+    min-height: 50px;
+    background-color: rgb(0, 240, 240);
+}
+
+p{
+    font-size: 20px;
+}
+
+body {
+    background-image: linear-gradient(rgba(137, 118, 249, 0.7), rgba(36, 0, 63, 0.7)), url(../images/Puerto_con_barquitos.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+article{
+    padding-left: 20px;
+    padding-right:20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: aliceblue;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.color-aliceblue{
+    color: aliceblue;
+}
+
+.foco {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.generar-padding-orillas{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.centrar-redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.contener-imagen-grande{
+    width: 66vw;
+}
+
+.contener-imagen-grande img{
+    object-fit: cover;
+}
+
+.centrar-imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+.margen-superior {
+    margin-top: 10px;
+}
+
+.pequeno-espacio-izq{
+    margin-left: 2vw;
+}
+
+.pequeno-espacio-der{
+    margin-right: 2vw;
+}
+
+#contenedor-form{
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#contenedor-act{
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 20px;
+}

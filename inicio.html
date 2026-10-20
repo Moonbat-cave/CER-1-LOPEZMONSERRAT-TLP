@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puerto Abierto</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div id="container" class="foco">
+        <!--Todo el navbar, barra superior-->
+        <nav class="navbar navbar-expand-lg rounded-5">
+            <div class="container-fluid">
+                <!--Nombre de la página junto a imagen-->
+                <img class="pequeno-espacio-izq pequeno-espacio-der" src="images/LOGO en negro.png" alt="Logo" width="80" height="80" class="d-inline-block align-text-top">
+                <a class="navbar-brand" href="inicio.html">Puerto Abierto</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--Hamburg-->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!--"ms-auto" es para tirarlo a la derecha-->
+                    <!--"ul" es es la barra del nav con los botones que llevan a otras direcciones-->
+                    <ul class="navbar-nav ms-auto pequeno-espacio-der">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="inicio.html">Principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="actividades.html">Actividades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="inscripcion.html">Inscripción</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Fila de columnas-->
+        <section class="row ms-auto me-auto foco">
+            <!--Esta columna usará 4 espacios al haber pantalla lg-->
+            <article class="col-xl-3 d-flex flex-column ms-auto">
+                <!--"d-flex" transforma la caja en una caja más flexible, "flex-column" la configura-->
+                <article class="centrar-texto md-auto generar-padding-orillas margen-superior">
+                    <h1>Bienvenido a Puerto Abierto</h1>
+                    <p>Te encuentras en la página del centro cultural Puerto Abierto, desde aquí podrás ver todas las actividades que tenemos preparadas para ti e inscribirte a ellas presionando el botón a continuación.</p>
+                </article>
+                <!--Todos los mt ms me sirven para que se generen espacios automaticamente y que de esa forma se alinien bien-->
+                <a class="btn btn-primary pequeno-espacio-izq pequeno-espacio-der ms-auto me-auto mt-auto" href="inscripcion.html" role="button">Ir a inscribirse</a>
+                <!--"mt-auto" envía el footer de este aside hacia el fondo-->
+                <figure class="centrar-imagen mt-auto">
+                    <img src="images/LOGO.png" height="400" width="400">
+                </figure>
+            </article>
+            <!--Esta columna usará 8 espacios al haber pantalla lg-->
+            <article class="col-xl-7 ms-auto me-auto mt-auto mb-auto">
+                <!--Carrusel-->
+                <h3 class="centrar-texto">Actividades más esperadas</h3>
+                <div id="carouselExampleCaptions" class="carousel slide rounded-5 overflow-hidden">
+                    <!--Controles del carrusel-->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <!--Carrusel como tal-->
+                    <div class="carousel-inner">
+                        <!--Item default del carrusel-->
+                        <div class="carousel-item active">
+                        <img src="images/Migatita1.jpeg" class="d-block w-100 contener-imagen-grande" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Feria de gatos</h5>
+                        </div>
+                        </div>
+                        <!--Otro item del carrusel-->
+                        <div class="carousel-item">
+                        <img src="images/LuisSliming2.jpeg" class="d-block w-100 contener-imagen-grande" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Stand Up Comedy: Luis Sliming</h5>
+                        </div>
+                        </div>
+                        <!--Otro item del carrusel-->
+                        <div class="carousel-item">
+                            <img src="images/ObraDeTeatroValentina.jpeg" class="d-block w-100 contener-imagen-grande" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Obra de teatro USM</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Disposición de los botones-->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    </div>
+                </article>
+                <footer class="ms-auto me-auto rounded-5">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 centrar-redes">
+                            <a href="https://www.instagram.com/?hl=es-la">@instagram</a>
+                        </div>
+                        <div class="col-md-3 col-sm-6 centrar-redes">
+                            <a href="https://x.com/?lang=es">www.twitter.com</a>
+                        </div>
+                        <div class="col-md-3 col-sm-6 centrar-redes">
+                            <a href="https://aula.usm.cl/">puerto.abierto@gmail.com</a>
+                        </div>
+                        <div class="col-md-3 col-sm-6 centrar-redes">
+                            <a href="https://i.pinimg.com/736x/ef/aa/85/efaa85262c2979c0bce49d0dc643d49e.jpg">wsp 999999999</a>
+                        </div>
+                    </div>
+                </footer>
+            </section>
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
